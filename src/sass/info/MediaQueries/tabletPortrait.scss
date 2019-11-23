@@ -1,0 +1,11 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+
+  & {
+    .about-video:before {
+      display: block;
+    }
+  }
+}
