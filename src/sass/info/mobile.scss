@@ -66,8 +66,8 @@
   }
 
   #nav-icon {
-    width: 40px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -115,12 +115,12 @@
 
   #nav-icon span:nth-child(3),
   #nav-icon span:nth-child(4) {
-    top: 10px;
+    top: 8px;
   }
 
   #nav-icon span:nth-child(5),
   #nav-icon span:nth-child(6) {
-    top: 20px;
+    top: 17px;
   }
 
   #nav-icon.open span:nth-child(1),
@@ -141,12 +141,12 @@
 
   #nav-icon.open span:nth-child(1) {
     left: 5px;
-    top: 7px;
+    top: 9px;
   }
 
   #nav-icon.open span:nth-child(2) {
     left: calc(50% - 5px);
-    top: 7px;
+    top: 9px;
   }
 
   #nav-icon.open span:nth-child(3) {
@@ -161,17 +161,17 @@
 
   #nav-icon.open span:nth-child(5) {
     left: 5px;
-    top: 17px;
+    top: 14px;
   }
 
   #nav-icon.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 17px;
+    top: 14px;
   }
 
   #nav-icon {
     float: right;
-    margin-top: 10px;
+    margin-top: 7px;
 
   }
 
@@ -352,28 +352,43 @@
     }
 
   }
+
   .login {
     margin-right: auto;
-        max-width: 290px;
+    max-width: 100%;
+    text-align: center;
   }
-  .calculator-summ .label input, .calculator-summ .label input:disabled {
+
+  .calculator-summ .label input,
+  .calculator-summ .label input:disabled {
     padding: 15px 10px;
-}
+  }
+
   .lang-list {
     right: -10px;
   }
+
   &.reg .nav .login {
     display: none;
   }
+
   &.reg .nav {
     #nav-icon span {
       background: #000;
     }
   }
+
   &.reg .nav .login .login-list li a {
     padding: 10px 7px;
-}
+  }
+
   .login-img img {
     margin: 0;
+  }
+  &.reg .nav .login {
+    text-align: center;
+  }
+  .registration {
+    background-size: cover;
   }
 }

@@ -214,7 +214,7 @@
     font-style: italic;
 }
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /**
 Ion.RangeSlider, 2.3.0
 © Denis Ineshin, 2010 - 2018, IonDen.com
@@ -529,8 +529,8 @@ Build date: 2018-12-12 00:07:25
 .irs--modern .irs-bar {
   top: 25px;
   height: 5px;
-  background: #20b426;
-  background: linear-gradient(to bottom, #20b426 0%, #18891d 100%);
+  background: #2fc738;
+//  background: linear-gradient(to bottom, #20b426 0%, #18891d 100%);
 }
 .irs--modern .irs-bar--single {
   border-radius: 5px 0 0 5px;
@@ -757,7 +757,7 @@ Build date: 2018-12-12 00:07:25
 .irs--round .irs-bar {
   top: 36px;
   height: 6px;
-  background-color: #b5e9b7;
+  background-color: #2fc738;
 }
 .irs--round .irs-bar--single {
   border-radius: 4px 0 0 4px;

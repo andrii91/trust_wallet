@@ -31,9 +31,9 @@ $(document).ready(function () {
             amount = usd_sum * 0.1;
         }
 
-        in_day.val((amount /  new Date(new Date().getFullYear(), new Date().getMonth()-1, 0).getDate()).toFixed(2));
-        in_month.val(amount.toFixed(2));
-        in_end.val((amount * 12).toFixed(2));
+        in_day.text((amount /  new Date(new Date().getFullYear(), new Date().getMonth()-1, 0).getDate()).toFixed(2));
+        in_month.text(new Intl.NumberFormat('ru-RU').format(amount.toFixed(2)));
+        in_end.text(new Intl.NumberFormat('ru-RU').format((amount * 12).toFixed(2)));
       
 
     }
@@ -75,10 +75,10 @@ usd_calc();
     grid: false,
     hide_min_max: true,
     hide_from_to: true,
-    min: 0.1,
-    step: 0.1,
+    min: 0.01,
+    step: 0.02,
     max: 5,
-    from: 0.1
+    from: 0.01
   });
   
       function btc_calc() {

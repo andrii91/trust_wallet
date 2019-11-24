@@ -80,17 +80,12 @@ body {
 
 .login {
   padding: 20px 0;
-  background-color: #2ed537;
-    background-image: linear-gradient(to right,rgba(44, 142, 62, 1) 0,rgba(45, 176, 58, 1) 100%);
-      display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 321px;
+  background-color: 0 0;
+text-align: right;
+    max-width: 330px;
   margin-left: auto;
   position: relative;
+  
   .lang {
     color: #ffffff;
     font-family: "SF Pro Display";
@@ -105,6 +100,7 @@ body {
     display: inline-block;
         padding-top: 9px;
     text-align: center;
+    vertical-align: middle;
     transition: .3s;
     &:hover {
       background: #34d875;
@@ -121,16 +117,21 @@ body {
   li {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 15px;
+    margin: 0 4px;
     a {
-      color: #ffffff;
+      color: #8ce790;
       font-family: "SF Pro Display";
       font-size: 14px;
       font-weight: 500;
       line-height: 1;
       transition: .3s;
+       display: block;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 10px 17px;
       &:hover {
-        color: #8ce790;
+        color: #000;
+        background: #ccc;
       }
     }
   }
@@ -385,9 +386,9 @@ display: block;
     justify-content: center;
     letter-spacing: 0.34px;
     
-    input, input:disabled  {
+    input, input:disabled, .input  {
       color: #474847;
-      font-family: "SF Pro Display";
+      font-family: "Montserrat";
       font-size: 17px;
       font-weight: 500;
       line-height: 1;
@@ -606,7 +607,7 @@ margin-left: auto;
 }
 
 .about-btn {
-  color: #293646;
+  color: #fff;
   font-family: "SF Pro Display";
   font-size: 16px;
   font-weight: 500;
@@ -673,7 +674,7 @@ margin-left: auto;
 }
 
 .form-btn {
-  color: #293646;
+  color: #fff;
   font-family: "SF Pro Display";
   font-size: 16px;
   font-weight: 500;
@@ -798,7 +799,7 @@ text-transform: uppercase;
       display: block;
       transition: .3s;
       &:hover {
-        
+        color: #27e335;
       }
     }
   }
@@ -856,22 +857,23 @@ text-transform: uppercase;
   margin: 0;
   position: absolute;
   top: 100%;
-  right: 15px;
+  right: 0px;
   display: none;
-      background-color: #2ed537;
-    background-image: linear-gradient(to right,#2c8e3e 0,#2db03a 100%);
+      background-color: #fff;
+//    background-image: linear-gradient(to right,#2c8e3e 0,#2db03a 100%);
   li {
     display: block;
     padding: 10px;
     text-align: center;
     a {
-       color: #ffffff;
+       color: #8ce790;
     font-family: "SF Pro Display";
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
-    width: 33px;
+    width: 133px;
+      text-align: center;
     height: 33px;
     border-radius: 2px;
     border: 1px solid #34d875;
@@ -880,6 +882,7 @@ text-transform: uppercase;
     transition: .3s;
     &:hover {
       background: #34d875;
+      color: #fff;
     }
     }
   }
@@ -914,6 +917,10 @@ text-transform: uppercase;
             border-radius: 3px;
             background-color: #1ac808;
             padding: 10px 17px;
+            color: #fff;
+            &:hover {
+              background: #50b442;
+            }
           }
         }
       }
@@ -921,6 +928,9 @@ text-transform: uppercase;
         color: #000;
         margin-left: 5px;
         vertical-align: middle;
+        &:hover {
+          color: #fff;
+        }
       }
       .lang-list {
         right: -10px;
@@ -1004,6 +1014,11 @@ text-transform: uppercase;
       font-weight: 400;
       line-height: 1;
       letter-spacing: 0.3px;
+      border-bottom: 1px dotted #21ad12;
+      &:hover {
+        color: #000;
+        border-color: #000;
+      }
     }
     input {
       border-radius: 3px;
@@ -1044,7 +1059,7 @@ text-transform: uppercase;
   }
   .form-btn {
     color: #fff;
-        padding: 15px 60px;
+        padding: 15px 48px;
     text-transform: uppercase;
   }
 }
