@@ -90,20 +90,24 @@ text-align: right;
     color: #ffffff;
     font-family: "SF Pro Display";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
     width: 33px;
     height: 33px;
     border-radius: 2px;
-    border: 1px solid #34d875;
+//    border: 1px solid #34d875;
+    
     display: inline-block;
         padding-top: 9px;
     text-align: center;
     vertical-align: middle;
     transition: .3s;
+    color: #fff;
+    background: #309c36;
     &:hover {
-      background: #34d875;
+      color: #309c36;
+background: #fff;
     }
     
   }
@@ -119,7 +123,7 @@ text-align: right;
     vertical-align: middle;
     margin: 0 4px;
     a {
-      color: #8ce790;
+      color: #339c3e;
       font-family: "SF Pro Display";
       font-size: 14px;
       font-weight: 500;
@@ -130,8 +134,8 @@ text-align: right;
             background-color: #fff;
             padding: 10px 17px;
       &:hover {
-//        color: #000;
-        background: #ccc;
+        color: #fff;
+        background-color: #339c3e ;
       }
     }
   }
@@ -855,35 +859,43 @@ text-transform: uppercase;
 
 .lang-list {
   list-style: none;
-  padding: 0;
+  padding: 5px 0;
   margin: 0;
   position: absolute;
-  top: 100%;
+  top: 64px;
   right: 0px;
   display: none;
       background-color: #fff;
 //    background-image: linear-gradient(to right,#2c8e3e 0,#2db03a 100%);
   li {
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
     a {
-       color: #8ce790;
     font-family: "SF Pro Display";
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
     width: 133px;
-      text-align: center;
+      text-align: left;
     height: 33px;
     border-radius: 2px;
-    border: 1px solid #34d875;
     display: block;
         padding-top: 9px;
     transition: .3s;
+      border: 1px solid #339c3e;
+color: #339c3e;
+      padding-left: 10px;
+      svg {
+        height: 15px;
+        max-width: 22.5px;
+        margin-right: 8px;
+        vertical-align: middle;
+        display: inline-block;
+      }
     &:hover {
-      background: #34d875;
+      background: #339c3e;
       color: #fff;
     }
     }
@@ -927,11 +939,10 @@ text-transform: uppercase;
         }
       }
       .lang {
-        color: #000;
         margin-left: 5px;
-        vertical-align: middle;
         &:hover {
           color: #fff;
+          background: #50b442;
         }
       }
       .lang-list {
