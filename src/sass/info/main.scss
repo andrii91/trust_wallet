@@ -1052,6 +1052,9 @@ color: #339c3e;
       display: block;
       width: 100%;
       margin-top: 5px;
+      &:active,&:focus {
+        border-color: #339c3e;
+      }
       &:placeholder {
         color: #b6c5b5;
       }
