@@ -934,16 +934,20 @@ color: #339c3e;
             padding: 10px 17px;
             color: #fff;
             &:hover {
-              background: #50b442;
+              background: #309c36; 
             }
           }
         }
       }
       .lang {
         margin-left: 5px;
+        color: #309c36;
+        border: 1px solid #1ac808;
+        border-radius: 3px;
+          background: #fff;
         &:hover {
           color: #fff;
-          background: #50b442;
+          background: #309c36;
         }
       }
       .lang-list {
