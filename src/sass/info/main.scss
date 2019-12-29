@@ -775,6 +775,9 @@ text-transform: uppercase;
 
 .footer-logo {
   margin-top: 27px;
+  img {
+    max-width: 225px;
+  }
 }
 
 .footer-menu {
@@ -1089,4 +1092,14 @@ color: #339c3e;
   img {
     margin: 0 -10%;
   }
+}
+
+.logo {
+  img {
+    max-width: 225px;
+  }
+}
+
+.timer {
+  
 }
